@@ -1,0 +1,72 @@
+<ion-header>
+    <ion-navbar color="dark">
+        <ion-title>
+            Quiz
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding class="bg">
+
+
+    <h1>Maths</h1>
+
+    <ion-slides pager="true" class="f">
+        <ion-slide>
+            <h3>Choose the correct answer 3+1 = ?</h3>
+          
+            <ion-item class="t">
+                <select [(ngModel)]="question1">
+                    <option value="1">4</option>
+                    <option value="2">8</option>
+                    <option value="4">41</option>
+                    <option value="5">40</option>
+                </select>
+            </ion-item>
+
+        </ion-slide>
+        <ion-slide>
+            <h3>Choose the correct answer 3+3 = ?</h3>
+         
+
+            <ion-item class="t">
+                <select [(ngModel)]="question2">
+                    <option value="1">4</option>
+                    <option value="2">8</option>
+                    <option value="4">6</option>
+                    <option value="5">5</option>
+                </select>
+            </ion-item>
+
+        </ion-slide>
+
+        <ion-slide>
+            <h3>Choose the correct answer 3+5 = ?</h3>
+
+
+            <ion-item class="t">
+                <select [(ngModel)]="question3">
+                    <option value="1">7</option>
+                    <option value="2">9</option>
+                    <option value="4">8</option>
+                    <option value="5">10</option>
+                </select>
+            </ion-item>
+        </ion-slide>
+        <ion-slide>
+            <h3>Choose the correct answer 3+6 = ?</h3>
+            <ion-item class="t">
+                <select [(ngModel)]="question4">
+                    <option value="1">8</option>
+                    <option value="2">10</option>
+                    <option value="4">9</option>
+                    <option value="5">6</option>
+                </select>
+            </ion-item>
+            <button ion-button small color="dark" (click)=" submit()">Next</button>
+        </ion-slide>
+    </ion-slides>
+
+    <h3>Level 1</h3>
+
+</ion-content>

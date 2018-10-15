@@ -1,0 +1,87 @@
+
+<ion-header>
+
+  <ion-navbar color="dark">
+    <ion-title>Quiz </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="bg">
+<h1>Technology</h1>
+
+
+<ion-slides pager="true" class="f">
+        <ion-slide >
+                    <h3>Which Device do you use to chat with ?</h3><br>
+        
+        <ion-item class="t">
+                <select [(ngModel)]="question1" >
+                        <option value="1">Mobile Phone</option>
+                        <option value="2">Fridge</option>
+                        <option value="4">TV</option>
+                        <option value="5">Dstv</option>
+                </select>
+        </ion-item>
+        
+        </ion-slide>
+        <ion-slide >
+                <h3>Which Apps can you use to chat with ?</h3><br>
+        
+        <ion-item class="t">
+            <select [(ngModel)]="question2" >
+                    <option value="1">Lenovo</option>
+                    <option value="2">Adobe</option>
+                    <option value="3">Whatsapp</option>
+                    <option value="5">PHP</option>
+            </select>
+        </ion-item>
+        
+        </ion-slide>
+        
+        <ion-slide >
+                <h3>Select an Output device</h3><br>
+        
+        <ion-item class="t">
+            <select [(ngModel)]="question3" >
+                    <option value="1">Scanner</option>
+                    <option value="2">Keyboard</option>
+                    <option value="4">Monitor</option>
+                    <option value="5">Mouse</option>
+            </select>
+        </ion-item>
+        
+        </ion-slide>
+        <ion-slide >
+                <h3>Select a Programming language ?</h3><br>
+        
+        <ion-item class="t">
+            <select [(ngModel)]="question4" >
+                    <option value="1">English</option>
+                    <option value="2">Africans</option>
+                    <option value="4">Python</option>
+                    <option value="5">Lion</option>
+            </select>
+          
+        </ion-item>
+        <button ion-button small color="dark" (click)=" submit()">Next</button>
+        </ion-slide>
+            </ion-slides>
+        
+        <h3>Level 3</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ion-content>

@@ -1,0 +1,83 @@
+<!--
+  Generated template for the GeneralPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="dark">
+    <ion-title>Quiz Level 5</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="bg">
+    <h1>General Questions</h1>
+
+
+
+
+    <ion-slides pager="true" class="f">
+            <ion-slide >
+                        <h3>Do you know what Soweto stand for ?</h3><br>
+            
+            <ion-item class="t">
+                    <select [(ngModel)]="question1" >
+                            <option value="1">South Western Townships </option>
+                            <option value="2">South West Town </option>
+                            <option value="4">South Africa Western Town</option>
+                            <option value="5">Soggy Western Town</option>
+                    </select>
+            </ion-item>
+            
+            </ion-slide>
+            <ion-slide >
+                    <h3>This mountain is one of the most popular places for tourists in South Africa. Can you name it?</h3><br>
+            
+            <ion-item class="t">
+                <select [(ngModel)]="question2" >
+                        <option value="1">Lions Head</option>
+                        <option value="2">Champagne Castle</option>
+                        <option value="4">Table Mountain</option>
+                        <option value="5">Devils Peak</option>
+                </select>
+            </ion-item>
+            
+            </ion-slide>
+            
+            <ion-slide >
+                    <h3>Nelson Mandela spent 18 years imprisoned on this infamous island. </h3><br>
+            
+            <ion-item class="t">
+                <select [(ngModel)]="question3" >
+                        <option value="1">Marion</option>
+                        <option value="2">Miskaba island</option>
+                        <option value="4">Robben Island</option>
+                        <option value="5">Ferari</option>
+                </select>
+            </ion-item>
+            
+            </ion-slide>
+            <ion-slide >
+                    <h3>Johannesburg's population boomed after what was found there?</h3><br>
+            
+            <ion-item class="t">
+                <select [(ngModel)]="question4" >
+                        <option value="1">Uranium</option>
+                        <option value="2">Platinum</option>
+                        <option value="4">Gold</option>
+                        <option value="5">Coal</option>
+                </select>
+              
+            </ion-item>
+            <button ion-button small color="dark" (click)=" submit()">Next</button>
+            </ion-slide>
+                </ion-slides>
+            
+            <h3>Level 5</h3>
+
+
+
+</ion-content>
